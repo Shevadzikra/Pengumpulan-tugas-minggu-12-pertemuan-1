@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Tasks - To Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>My Tasks.</h1>
+            <p>Kelola aktivitas dan tugas harianmu.</p>
+        </header>
+
+        <section class="summary">
+            <h2>Stay Productive!</h2>
+            <p>Jangan lupa selesaikan tugasmu hari ini.</p>
+
+            <div class="summary-content">
+                <div>
+                    <h3>4</h3>
+                    <p>Total Tugas</p>
+                </div>
+
+                <div>
+                    <h3>2</h3>
+                    <p>Selesai</p>
+                </div>
+
+                <div>
+                    <h3>2</h3>
+                    <p>Belum Selesai</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="task-section">
+            <div class="section-header">
+                <h2>Daftar Tugas</h2>
+                <span>Hari Ini</span>
+            </div>
+
+            <div class="task-list">
+
+                <div class="task completed">
+                    <input type="checkbox" checked>
+                    <div class="task-info">
+                        <h3>Mengerjakan tugas Algoritma</h3>
+                        <p>Akademik · 10:00 WIB</p>
+                    </div>
+                </div>
+
+                <div class="task">
+                    <input type="checkbox">
+                    <div class="task-info">
+                        <h3>Membaca materi HTML & CSS</h3>
+                        <p>Belajar · 13:00 WIB</p>
+                    </div>
+                </div>
+
+                <div class="task">
+                    <input type="checkbox">
+                    <div class="task-info">
+                        <h3>Menyelesaikan laporan praktikum</h3>
+                        <p>Akademik · 15:00 WIB</p>
+                    </div>
+                </div>
+
+                <div class="task completed">
+                    <input type="checkbox" checked>
+                    <div class="task-info">
+                        <h3>Review materi perkuliahan</h3>
+                        <p>Personal · 19:00 WIB</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="add-section">
+            <h2>Tambah Tugas</h2>
+
+            <form>
+                <input
+                    type="text"
+                    placeholder="Masukkan nama tugas..."
+                >
+
+                <button type="button">+ Tambah Tugas</button>
+            </form>
+        </section>
+
+        <footer>
+            <p>My Tasks. © 2026 - Dibuat dengan HTML & CSS</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>

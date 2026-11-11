@@ -1,0 +1,183 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f5f9;
+    color: #202438;
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 650px;
+    margin: auto;
+}
+
+header {
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+header p {
+    color: #777;
+}
+
+.summary {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
+.summary h2 {
+    margin-bottom: 8px;
+}
+
+.summary > p {
+    color: #777;
+    font-size: 14px;
+}
+
+.summary-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.summary-content h3 {
+    font-size: 28px;
+    margin-bottom: 5px;
+    color: #5558d9;
+}
+
+.summary-content p {
+    font-size: 13px;
+    color: #777;
+}
+
+.task-section {
+    margin-bottom: 30px;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.section-header span {
+    background-color: #e7e8ff;
+    color: #5558d9;
+    padding: 7px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.task-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.task {
+    background-color: white;
+    padding: 18px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.task input {
+    width: 18px;
+    height: 18px;
+    accent-color: #5558d9;
+    cursor: pointer;
+}
+
+.task-info h3 {
+    font-size: 15px;
+    margin-bottom: 6px;
+}
+
+.task-info p {
+    font-size: 12px;
+    color: #888;
+}
+
+.task.completed .task-info h3 {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.add-section {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+.add-section h2 {
+    margin-bottom: 15px;
+}
+
+.add-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.add-section input {
+    padding: 13px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+}
+
+.add-section input:focus {
+    border-color: #5558d9;
+}
+
+.add-section button {
+    padding: 13px;
+    border: none;
+    border-radius: 8px;
+    background-color: #5558d9;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.add-section button:hover {
+    background-color: #4144b5;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    color: #999;
+    font-size: 12px;
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 25px 15px;
+    }
+
+    .summary-content h3 {
+        font-size: 23px;
+    }
+
+    .task-info h3 {
+        font-size: 13px;
+    }
+}
